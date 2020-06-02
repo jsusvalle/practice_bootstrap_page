@@ -1,0 +1,134 @@
+    /* -----ESPECIFICACIONES------
+TIPOGRAFÍAS
+
+Open Sans Regular
+Open Sans Extrabold
+
+
+TAMAÑOS
+
+Encabezado 1r nivel: 44px
+Encabezado 2º nivel: 28px
+Encabezado 3r nivel: 24px
+Cuerpo de texto: 16px
+Botones: 14px
+*/
+    /* -----ESPECIFICACIONES------*/
+    
+     :root {
+        --Rojo: #d03b40;
+        --Beige: #ded6c0;
+        --Blanco: #f5f0ed;
+        --Gris: #241d1b;
+        --textoclaro: #f5f0ed;
+        --textooscuro: #3c3c3b;
+    }
+    /* ------CUERPO DE FONDO------ */
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+    /* ------ENCABEZADO------ */
+    
+    hr {
+        border: 1px solid var(--Blanco);
+        width: 10rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .bg-success {
+        background-color: var(--Rojo)!important;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    @media (min-width: 768px) {
+        .barra.bg-success {
+            background-color: transparent!important;
+        }
+        .header {
+            position: relative;
+        }
+        .header .barra {
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+        }
+    }
+    /* SECCIÓN DE DOS*/
+    
+    .pt-9,
+    .py-9 {
+        padding-top: 9rem !important;
+        padding-bottom: 9rem !important;
+    }
+    
+    .bg-red {
+        background-color: var(--Rojo);
+    }
+    
+    .bg-beige {
+        background-color: var(--Beige);
+    }
+    
+    .text-color-beige {
+        color: var(--Beige);
+    }
+    
+    .text-color-red {
+        color: var(--Rojo);
+    }
+    /* DESCUBRE */
+    
+    .descubre {
+        background: url(/imagenes/Fondo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .descubre .container .row {
+        height: 35rem;
+    }
+    
+    .btn-nobg {
+        color: var(--textoclaro);
+        background-color: none;
+        border: 0.1rem solid #ffffff;
+        border-radius: 0;
+        text-decoration: none;
+        padding: 2.5rem;
+    }
+    
+    .btn-nobg:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--textoclaro);
+        text-decoration: none;
+    }
+    /*iconos*/
+    
+    .contenedor-iconos {
+        background-color: var(--Blanco);
+    }
+    
+    .contenedor-iconos h3 {
+        text-align: start;
+        font-size: 1.5rem;
+    }
+    
+    @media (max-width: 764px) {
+        .contenedor-iconos h3,
+        .contenedor-iconos p {
+            text-align: center;
+        }
+    }
